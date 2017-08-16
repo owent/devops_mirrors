@@ -1,0 +1,26 @@
+<h2>{{title}}</h2>
+<hr />
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-inverse">
+    <tr>
+      <th>镜像名称</th>
+      <th>上次同步时间</th>
+      <th>占用空间</th>
+      <th style="text-align: center;">状态</th>
+      <th>上次同步速度</th>
+      <th>上次同步来源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of repos" id="repo-{{item.name}}">
+      <td><a target="_blank" [href]="item.url">{{item.name}}</a></td>
+      <td>{{item.update}}</td>
+      <td>{{item.total_size}}</td>
+      <td style="text-align: center;"><span [class]="item.getStatusStyle()" data-toggle="tooltip" data-placement="bottom" [title]="item.status_detail">{{item.status}}</span></td>
+      <td>{{item.speed}}</td>
+      <td *ngIf="item.log"><a target="_blank" [href]="item.log">{{item.src}}</a></td>
+      <td *ngIf="!item.log">{{item.src}}</td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="error_msg" class="bg-danger">{{error_msg}}</div>

@@ -1,0 +1,7 @@
+/app/*.js
+/app/*.map
+/node_modules
+/tools/*.log
+/tools/cache
+/repo/*
+/tools/apt-mirror

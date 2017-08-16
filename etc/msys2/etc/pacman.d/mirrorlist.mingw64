@@ -1,0 +1,10 @@
+##
+## 64-bit Mingw-w64 repository mirrorlist
+##
+## Primary
+## msys2.org
+Server = https://mirrors.giuer.com/repo/MSYS2/mingw/x86_64
+Server = http://mirrors.ustc.edu.cn/msys2/REPOS/MINGW/x86_64
+Server = http://mirror.bit.edu.cn/msys2/REPOS/MINGW/x86_64
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/x86_64
+Server = http://mirrors.zju.edu.cn/msys2/msys2/REPOS/MINGW/x86_64

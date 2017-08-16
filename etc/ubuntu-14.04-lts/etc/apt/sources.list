@@ -1,0 +1,19 @@
+deb https://mirrors.giuer.com/repo/ubuntu/ trusty main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ trusty-security main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ trusty-updates main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ trusty-proposed main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ trusty-backports main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ trusty main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ trusty-security main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ trusty-updates main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ trusty-proposed main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ trusty-backports main restricted universe multiverse

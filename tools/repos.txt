@@ -1,0 +1,13 @@
+# synax: REPO_NAME [options...]
+# options:
+# LOCAL_PATH=<where to store files> relative to repo path, default: ""
+# REMOTE_PATH=<remote path suffix>, relative to REPO_URL, default: REPO_NAME
+# REPO_URL=<repo url>, this can be added more than once, REPO_URL will be tried one by one util rsync finished.
+# REPO_TTL_TIMEOUT=<timeout>, this will be used in timeout command, default: 1h 
+# REPO_TTL=<retry times>, retry times when timeout, default: 3
+# HELP_URL=<help url address>, help page address, default: /etc
+
+msys2 REMOTE_PATH= LOCAL_PATH=MSYS2 REPO_URL=rsync://mirrors.tuna.tsinghua.edu.cn/msys2 REPO_URL=rsync://repo.msys2.org/builds
+centos LOCAL_PATH=centos REPO_TTL_TIMEOUT=2h REPO_TTL=10 REPO_RSYNC_OPTIONS=--exclude=4*/ REPO_RSYNC_OPTIONS=--exclude=5*/ REPO_RSYNC_OPTIONS=--exclude=6*/ REPO_URL=rsync://mirrors.yun-idc.com/centos/ REPO_URL=rsync://rsync.mirrors.ustc.edu.cn/centos/ REPO_URL=rsync://mirrors.tuna.tsinghua.edu.cn/centos/
+epel LOCAL_PATH=epel REPO_TTL_TIMEOUT=2h REPO_TTL=10 REPO_RSYNC_OPTIONS=--exclude=4*/ REPO_RSYNC_OPTIONS=--exclude=5*/ REPO_RSYNC_OPTIONS=--exclude=6*/ REPO_URL=rsync://mirrors.yun-idc.com/epel/ REPO_URL=rsync://rsync.mirrors.ustc.edu.cn/epel/ REPO_URL=rsync://mirrors.tuna.tsinghua.edu.cn/epel/ rsync://dl.fedoraproject.org/fedora-epel/
+ubuntu(trusty-xenial) REPO_TOOL=apt-mirror LOCAL_PATH=ubuntu.apt-mirror REMOTE_PATH=ubuntu-mirror.list REPO_URL=http://mirrors.aliyun.com/ubuntu

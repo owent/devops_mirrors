@@ -1,0 +1,19 @@
+deb https://mirrors.giuer.com/repo/ubuntu/ xenial main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ xenial-security main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ xenial-updates main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ xenial-proposed main restricted universe multiverse
+
+deb https://mirrors.giuer.com/repo/ubuntu/ xenial-backports main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ xenial main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ xenial-security main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ xenial-updates main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ xenial-proposed main restricted universe multiverse
+
+deb-src https://mirrors.giuer.com/repo/ubuntu/ xenial-backports main restricted universe multiverse

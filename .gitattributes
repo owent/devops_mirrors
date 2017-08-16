@@ -1,0 +1,2 @@
+*.sh eol=lf
+/tools/repos.txt eol=lf
